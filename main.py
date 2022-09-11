@@ -17,11 +17,11 @@ RMMODS = Client(
 
 @RMMODS.on_message(filters.command("start")) 
 async def start_cmd(client, message):
-    print("START Command")
+    await message.reply_text("Hello..! Iam pyrogram Demo Bot")    
 
-@RMMODS.on_message(filters.command("help")) 
-async def help_cmd(client, message):
-    print("HELP Command")
+@RMMODS.on_message(filters.command("about")) 
+async def about_cmd(client, message):
+    await message.reply_text("Bot Status")    
 
 
 
