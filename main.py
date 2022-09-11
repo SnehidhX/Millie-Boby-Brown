@@ -17,7 +17,9 @@ RMMODS = Client(
 
 @RMMODS.on_message(filters.command("start")) 
 async def start_cmd(client, message):
-    await message.reply_text("Hello..! Iam pyrogram Demo Bot")    
+    await message.reply_photo(
+        photo="https://telegra.ph/file/ae8ba6d9bc7b00e7346ce.jpg", 
+        caption="Hey Iam pyrogram BotBot") 
 
 @RMMODS.on_message(filters.command("about")) 
 async def about_cmd(client, message):
