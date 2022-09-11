@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 API_ID = "15530355"
 API_HASH = "4ca71076aff9fb546651db89c9cae8b1"
@@ -13,13 +13,18 @@ RMMODS = Client(
     bot_token=BOT_TOKEN
 ) 
 
+START_BUTTONS = [[
+  InlineKeyboardButton("JOIN HERE", url="https://t.me/+sWoGaitW8200OGI9")
+]] 
 
 
 @RMMODS.on_message(filters.command("start")) 
 async def start_cmd(client, message):
     await message.reply_photo(
         photo="https://telegra.ph/file/ae8ba6d9bc7b00e7346ce.jpg", 
-        caption="Hey Iam pyrogram BotBot") 
+        caption="Hey Iam pyrogram Bot",
+         reply_markup=InlineKeyboardMarkup(START_BUTTONS) 
+    ) 
 
 @RMMODS.on_message(filters.command("about")) 
 async def about_cmd(client, message):
