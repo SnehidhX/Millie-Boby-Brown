@@ -23,7 +23,7 @@ START_BUTTONS = [[
 async def start_cmd(client, message):
     await message.reply_photo(
         photo="https://telegra.ph/file/ae8ba6d9bc7b00e7346ce.jpg", 
-        caption="Hey Iam pyrogram Bot",
+        caption="𝙷𝙴𝚈 𝙸𝙰𝙼 𝙼𝙸𝙻𝙻𝙸𝙴 𝙱𝙾𝙱𝙱𝚈 𝙱𝚁𝙾𝚆𝙽",
          reply_markup=InlineKeyboardMarkup(START_BUTTONS) 
     ) 
 
