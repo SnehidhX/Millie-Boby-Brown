@@ -14,8 +14,9 @@ RMMODS = Client(
 ) 
 
 START_BUTTONS = [[
-  InlineKeyboardButton("JOIN HERE", url="https://t.me/+sWoGaitW8200OGI9")
-]] 
+  InlineKeyboardButton("group", url="https://t.me/+o-MQ_xH-KOk2OWZl"),
+  InlineKeyboardButton("channel", url=https://t.me/+sWoGaitW8200OGI9")
+  ]] 
 
 
 @RMMODS.on_message(filters.command("start")) 
