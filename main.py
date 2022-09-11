@@ -14,6 +14,18 @@ RMMODS = Client(
 ) 
 
 
+
+@RMMODS.on_message(filters.command("start")) 
+async def start_cmd(client, message):
+    print("START Command")
+
+@RMMODS.on_message(filters.command("help")) 
+async def help_cmd(client, message):
+    print("HELP Command")
+
+
+
+
 print("Bot Was Started")
 
 RMMODS.run() 
