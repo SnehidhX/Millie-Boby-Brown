@@ -16,7 +16,8 @@ RMMODS = Client(
 START_BUTTONS = [[
   InlineKeyboardButton("𝚈𝙾𝚄𝚃𝚄𝙱𝙴", url="https://youtube.com/channel/UC5dK6ViXIXHA7laqHFoviBA"),
   InlineKeyboardButton("𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼", url="https://instagram.com/snehidh.antony?igshid=YmMyMTA2M2Y="),
-  InlineKeyboardButton("𝙶𝙸𝚃𝙷𝚄𝙱", url="https://github.com/SnehidhX/PYROGRAM-BY_SNEHIDH") 
+  InlineKeyboardButton("𝙶𝙸𝚃𝙷𝚄𝙱", url="https://github.com/SnehidhX/PYROGRAM-BY_SNEHIDH"), 
+  InlineKeyboardButton("𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁", url="https://api.whatsapp.com/send?phone=+918086725570") 
   ]]
 
 
