@@ -1,5 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import ReplyKeyboardMarkup
+
 
 API_ID = "15530355"
 API_HASH = "4ca71076aff9fb546651db89c9cae8b1"
@@ -26,7 +28,13 @@ async def start_cmd(client, message):
         photo="https://telegra.ph/file/ae8ba6d9bc7b00e7346ce.jpg", 
         caption="𝙷𝙴𝚈 𝙸𝙰𝙼 𝙼𝙸𝙻𝙻𝙸𝙴 𝙱𝙾𝙱𝙱𝚈 𝙱𝚁𝙾𝚆𝙽",
          reply_markup=InlineKeyboardMarkup(START_BUTTONS) 
-    ) 
+         reply_markup=ReplyKeyboardMarkup(
+             [[
+                 "START"
+             ]]
+         ) 
+     ) 
+
 
 @RMMODS.on_message(filters.command("about")) 
 async def about_cmd(client, message):
